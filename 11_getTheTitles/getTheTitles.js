@@ -1,11 +1,5 @@
-const getTheTitles = function(array) {
-	return array.map((arrItem) => arrItem.title);
+var getTheTitles = function (array) {
+    return array.map(function (arrItem) { return arrItem["title"]; });
 };
-console.log(getTheTitles([
-	{
-		title: "Book",
-		author: "Name"
-	}
-]))
 // Do not edit below this line
 module.exports = getTheTitles;
