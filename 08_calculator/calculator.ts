@@ -7,20 +7,12 @@ const subtract = function(num1: number, num2: number): number {
 };
 
 const sum = function(arr: number[]) {
-	let sum: number = 0;
-	arr.forEach(num => {
-		sum += num
-	});
-	return sum;
-};
+	return arr.reduce((acc, curr) => acc + curr, 0)
+	};
 
 const multiply = function(arr: number[]): number {
-	let sum: number = 1;
-	arr.forEach(num => {
-		sum *= num;
-	});
-	return sum;
-};
+	return arr.reduce((acc, curr) => acc * curr, 1)
+	};
 
 const power = function(num1: number, num2: number): number {
 	let sum: number = 1;

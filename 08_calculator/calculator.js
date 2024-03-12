@@ -5,18 +5,10 @@ var subtract = function (num1, num2) {
     return num1 - num2;
 };
 var sum = function (arr) {
-    var sum = 0;
-    arr.forEach(function (num) {
-        sum += num;
-    });
-    return sum;
+    return arr.reduce(function (acc, curr) { return acc + curr; }, 0);
 };
 var multiply = function (arr) {
-    var sum = 1;
-    arr.forEach(function (num) {
-        sum *= num;
-    });
-    return sum;
+    return arr.reduce(function (acc, curr) { return acc * curr; }, 1);
 };
 var power = function (num1, num2) {
     var sum = 1;
